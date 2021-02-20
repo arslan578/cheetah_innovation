@@ -45,7 +45,7 @@
           <div class="collapse navbar-collapse" id="navbarResponsive">
             <ul class="navbar-nav ml-auto">
               <li class="nav-item active">
-                <a class="nav-link" href="index-2.html">Home
+                <a class="nav-link" href="{% url 'Index' %}">Home
                   <span class="sr-only">(current)</span>
                 </a>
               </li>
@@ -53,7 +53,7 @@
                 <a class="nav-link" onclick="scrollto('about');">About Us</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="services.html">Our Services</a>
+                <a class="nav-link" href="{% url 'Services' %}">Our Services</a>
               </li>
               <li class="nav-item">
                 <a class="nav-link" onclick="scrollto('contact');">Contact Us</a>
@@ -91,7 +91,7 @@
                     promotion of technological innovation and
                     help young entrepreneurs in the financing
                     and implementation of their projects.</p>
-                  <a href="services.html" class="filled-button">our services</a>
+                  <a href="{% url 'Services' %}" class="filled-button">our services</a>
                 </div>
             </div>
           </div> -->
@@ -313,7 +313,7 @@
             <h4>Additional Pages</h4>
             <ul class="menu-list">
               <li><a href="#" onclick="scrollto('about');">About Us</a></li>
-              <li><a href="services.html">How We Work</a></li>
+              <li><a href="{% url 'Services' %}">How We Work</a></li>
               <li><a href="#" onclick="scrollto('map');">where we are</a></li>
               <li><a href="#" onclick="scrollto('contact');">Contact Us</a></li>
             </ul>
