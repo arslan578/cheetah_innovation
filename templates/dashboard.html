@@ -1,0 +1,393 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block body %}
+
+    <!-- ***** Preloader Start ***** -->
+    <div id="preloader">
+        <div class="jumper">
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+    </div>  
+    <!-- ***** Preloader End ***** -->
+
+    <!-- Header -->
+    <div class="sub-header">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-8 col-xs-12">
+            <ul class="left-info">
+              <li><a href="#"><i class="fa fa-envelope" aria-hidden="true"></i>cheetah.inno@iriba.org</a></li>
+              <li><a href="#"><i class="fa fa-phone"></i>+32 477 73 11 24</a></li>
+            </ul>
+          </div>
+          <div class="col-md-4">
+            <ul class="right-icons">
+              <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+              <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+              <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+              <li><a href="#"><i class="fa fa-youtube"></i></a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <header class="">
+      <nav class="navbar navbar-expand-lg">
+        <div class="container">
+          <a class="navbar-brand" href="index-2.html"> <img src="{% static 'images/cheetah_logo.svg' %}" alt=""> </a>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarResponsive">
+            <ul class="navbar-nav ml-auto">
+              <li class="nav-item active">
+                <a class="nav-link" href="index-2.html">Home
+                  <span class="sr-only">(current)</span>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" onclick="scrollto('about');">About Us</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="services.html">Our Services</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" onclick="scrollto('contact');">Contact Us</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <!-- Page Content -->
+    <!-- Banner Starts Here -->
+    <div class="main-banner header-text" id="top">
+        <div class="Modern-Slider">
+          <!-- Item -->
+          <div class="item item-1">
+            <div class="img-fill">
+                <div class="text-content">
+                  <h6>SPACE FOR IDEAS, TRAINING AND CREATION OF INNOVATIVE COMPANIES</h6>
+                  <h4>JOIN CHEETAH INNOVATION</h4>
+                  <p> &nbsp; </p>
+                  <a href="#" onclick="scrollto('about');" class="filled-button">Learn More</a>
+                </div>
+            </div>
+          </div>
+          
+          <!-- <div class="item item-2">
+            <div class="img-fill">
+                <div class="text-content">
+                  <h6>we are here to support you</h6>
+                  <h4>OUR AIM<br>&amp; Management</h4>
+                  <p>Our aim is to fight against unemployment
+                    among young Africans, contribute to the
+                    digital take-off of the continent through the
+                    promotion of technological innovation and
+                    help young entrepreneurs in the financing
+                    and implementation of their projects.</p>
+                  <a href="services.html" class="filled-button">our services</a>
+                </div>
+            </div>
+          </div> -->
+          
+        </div>
+    </div>
+    <!-- Banner Ends Here -->
+
+    <div class="more-info" id="about">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12">
+            <div class="more-info-content">
+              <div class="row">
+                <div class="col-md-6">
+                  <div class="left-image">
+                    <img src="{% static 'images/Cheetah%408.html' %}" alt="">
+                  </div>
+                </div>
+                <div class="col-md-6 align-self-center">
+                  <div class="right-content">
+                    <span>Who we are</span>
+                    <h2>ABOUT CHEETAH INNOVATION</h2>
+                    <p> CHEETAH INNOVATION is a network of technology project incubators that trains, supervises and supports project leaders and innovative ideas in Burundi, Democratic Republic of the Congo, Rwanda and Uganda.
+                    </br>
+                      CHEETAH INNOVATION is an initiative of the non-governmental organization IRIBA that aims to develop a culture of talent and entrepreneurship as an engine for Africa's development.
+                    </br>  
+                      IRIBA breaks down the barriers to self-development that currently prevent young African entrepreneurs from realizing their ambitions.
+                      </p>
+                    <a href="#" class="filled-button">Join us</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="mission">
+      <div class="container">
+        <div class="row justify-content-md-center">
+          <div class="col-md-8">
+            <h4><img src="{% static 'images/mission_icon.svg' %}" style="height: 30px;"> MISSION </h4>
+            <p>
+              Our aim is to fight against unemployment among young Africans, contribute to the digital take-off of the continent through the promotion of technological innovation and help young entrepreneurs in the financing and implementation of their projects.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="team">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12">
+            <div class="section-heading">
+              <h2>Our team <em>members</em></h2>
+              
+            </div>
+          </div>
+          <div class="col-md-12">
+            <div class="col-md-4" style="margin: auto; margin-bottom:2rem;">
+              <div class="team-item boss">
+                <img src="{% static 'images/Cheetah_claude.jpg' %}" alt="">
+                <div class="down-content" >
+                  <h4>CLAUDE NTAHUGA</h4>
+                  <span>International Manager</span>
+                  <p>ntahuga@iriba.org</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-3">
+            <div class="team-item">
+              <img src="{% static 'images/Cheetah_samy.jpg' %}" alt="">
+              <div class="down-content">
+                <h4>SAMY MWAMBA</h4>
+                <span>DRC Manager</span>
+                <p>mwamba@iriba.org</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-3">
+            <div class="team-item">
+              <img src="{% static 'images/Cheetah_aime.jpg' %}" alt="">
+              <div class="down-content">
+                <h4>AIMÉ IGIRANEZA</h4>
+                <span>BURUNDI Manager</span>
+                <p>igiraneza@iriba.org</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-3">
+            <div class="team-item">
+              <img src="{% static 'images/Cheetah_elsa.jpg' %}" alt="">
+              <div class="down-content">
+                <h4>ELSA NIBIGIRA</h4>
+                <span>UGANDA Manager</span>
+                <p>nibigira@iriba.org</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-3">
+            <div class="team-item">
+              <img src="{% static 'images/Cheetah_lythiahana.jpg' %}" alt="">
+              <div class="down-content">
+                <h4>LYTHIAHANA KILESHE</h4>
+                <span>Sales Manager</span>
+                <p>kileshe@iriba.org</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="fun-facts" id="services">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6">
+            <div class="left-content">
+              <span>What we do</span>
+              <h2>BUSINESS INCUBATOR & INCUBATOR IT</h2>
+              <p>Cheetah Innovation is a support structure for young computer scientists with projects and innovative company creators. It intervenes from the formalization of the idea and the concept, until the creation of the company. Coached by professionals and experts, the young computer scientists can set up and test their project.
+              </p> 
+              <p>Cheetah Innovation is an incubator of digital companies allowing selected young people to:
+                <ul>
+                <li>Test the viability of their business project in real life, for 1 to 2 years; without social, financial or legal risk;</li>
+                  <li>Benefit from a provisional status that allows them to charge for services and/or the sale of their products under the legal supervision of Cheetah Innovation;</li>
+                  <li>Also benefit from a personalized accompaniment;</li>
+                  <li>To have financial and logistical support.</li>
+                </ul>  
+              </p>
+              <a href="#" class="filled-button">Join us</a>
+            </div>
+          </div>
+          <div class="col-md-6 align-self-center">
+            <div class="row justify-content-md-center">
+              <div class="col-md-7">
+                <div class="count-area-content">
+                  <div class="count-digit">50</div>
+                  <div class="count-title">Projects</div>
+                </div>
+              </div>
+              <div class="col-md-7">
+                <div class="count-area-content">
+                  <div class="count-digit">4</div>
+                  <div class="count-title">Countries</div>
+                </div>
+              </div>
+              <div class="col-md-7">
+                <div class="count-area-content">
+                  <div class="count-digit">2</div>
+                  <div class="count-title"> Year Period</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="request-form">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-8 ">
+            <h4>Incubation Period</h4>
+            <span>The duration of the incubation is two years, during this
+              incubation period we give all the possible luggage to
+              launch into the business world.</span>
+          </div>
+          <div class="col-md-4">
+            <a href="#" onclick="scrollto('contact');" class="border-button">Contact Us</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="map" id="map">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12">
+              <div class="row justify-content-md-center">
+                <h2>Our Locations </h2>
+                <div>
+                  <img src="{% static 'images/Cheetah_map.jpg' %}" />
+                </div>
+              </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Footer Starts Here -->
+    <footer>
+      <div class="container">
+        <div class="row">
+          <div class="col-md-3 footer-item">
+            <h4><img src="{% static 'images/cheetah_logo.svg' %}" alt="" style=" height:60px "></h4>
+            <p>A network of technology project incubators that trains, supervises and supports project leaders and innovative ideas in Burundi, Democratic Republic of the Congo, Rwanda and Uganda.</p>
+            <ul class="social-icons">
+              <li><a rel="nofollow" href="#" target="_blank"><i class="fa fa-facebook"></i></a></li>
+              <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+              <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+              <li><a href="#"><i class="fa fa-youtube"></i></a></li>
+            </ul>
+          </div>
+          <div class="col-md-3 footer-item">
+            <h4>Adresse</h4>
+            <ul class="menu-list">
+              <li>IRIBA INTERNATIONAL
+                Place Marcel Broodthaers 8/5,
+                1060 Bruxelles, Belgique</li>
+              
+            </ul>
+          </div>
+          <div class="col-md-3 footer-item">
+            <h4>Additional Pages</h4>
+            <ul class="menu-list">
+              <li><a href="#" onclick="scrollto('about');">About Us</a></li>
+              <li><a href="services.html">How We Work</a></li>
+              <li><a href="#" onclick="scrollto('map');">where we are</a></li>
+              <li><a href="#" onclick="scrollto('contact');">Contact Us</a></li>
+            </ul>
+          </div>
+          <div class="col-md-3 footer-item last-item" id="contact">
+            <h4>Contact Us</h4>
+            <ul class="menu-list">
+              <li>Phone 1: &nbsp; <a href="#">+32 477 73 11 24</a></li>
+              <li>Phone 2: &nbsp;<a href="#">+322 892 40 05</a></li>
+              <li>email: &nbsp;<a href="#">cheetah.inno@iriba.org</a></li>
+              <li>Web: &nbsp;<a href="#">iriba.org</a></li>
+            </ul>
+
+            <!-- <div class="contact-form">
+              <form id="contact footer-contact" action="" method="post">
+                <div class="row">
+                  <div class="col-lg-12 col-md-12 col-sm-12">
+                    <fieldset>
+                      <input name="name" type="text" class="form-control" id="name" placeholder="Full Name" required="">
+                    </fieldset>
+                  </div>
+                  <div class="col-lg-12 col-md-12 col-sm-12">
+                    <fieldset>
+                      <input name="email" type="text" class="form-control" id="email" pattern="[^ @]*@[^ @]*" placeholder="E-Mail Address" required="">
+                    </fieldset>
+                  </div>
+                  <div class="col-lg-12">
+                    <fieldset>
+                      <textarea name="message" rows="6" class="form-control" id="message" placeholder="Your Message" required=""></textarea>
+                    </fieldset>
+                  </div>
+                  <div class="col-lg-12">
+                    <fieldset>
+                      <button type="submit" id="form-submit" class="filled-button">Send Message</button>
+                    </fieldset>
+                  </div>
+                </div>
+              </form>
+            </div> -->
+          </div>
+        </div>
+      </div>
+    </footer>
+    
+    <div class="sub-footer">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12">
+            <p>Copyright &copy; 2020 Cheetah Innovation.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <script type="text/javascript">
+      function scrollto(div)
+      {
+       $('html,body').animate(
+       {
+        scrollTop: $("#"+div).offset().top-80
+       },'slow');
+      }
+      </script>
+
+    <script language = "text/Javascript"> 
+
+      cleared[0] = cleared[1] = cleared[2] = 0; //set a cleared flag for each field
+      function clearField(t){                   //declaring the array outside of the
+      if(! cleared[t.id]){                      // function makes it static and global
+          cleared[t.id] = 1;  // you could use true and false, but that's more typing
+          t.value='';         // with more chance of typos
+          t.style.color='#fff';
+          }
+      }
+
+    </script>
+{% endblock %}

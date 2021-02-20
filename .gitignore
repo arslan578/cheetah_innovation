@@ -1,0 +1,7 @@
+.env
+.env/
+.DS_Store
+.idea/
+cheetah/__pycache__/
+cheetah/migrations/__pycache__/
+cheetah_innovation/__pycache__/
