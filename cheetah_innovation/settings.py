@@ -46,6 +46,7 @@ INSTALLED_APPS = [
 
 PROJECT_APPS = [
     'cheetah.apps.CheetahConfig',
+    'users.apps.UsersConfig',
 ]
 
 INSTALLED_APPS += PROJECT_APPS
@@ -131,3 +132,5 @@ STATICFILES_DIRS = [
     os.path.join(BASE_DIR, 'static')
 ]
 
+AUTH_USER_MODEL = 'users.Users'
+LOGIN_URL = '/'
