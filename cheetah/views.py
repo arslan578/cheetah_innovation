@@ -1,7 +1,6 @@
 from django.shortcuts import render, redirect
 from django.contrib.auth.views import TemplateView
 # Create your views here.
-from django.views.generic.base import View
 
 from users.models import Users
 import uuid
@@ -39,11 +38,3 @@ class IndexView(TemplateView):
 
 class ServicesView(TemplateView):
     template_name = 'services.html'
-
-
-class LogoutView(View):
-
-    def get(self, request):
-        request.user.delete()
-        return redirect('SignUp')
-
