@@ -133,4 +133,6 @@ STATICFILES_DIRS = [
 ]
 
 AUTH_USER_MODEL = 'users.Users'
-LOGIN_URL = '/'
+LOGIN_URL = '/login'
+
+AUTHENTICATION_BACKENDS = ['cheetah.utils.EmailBackend']

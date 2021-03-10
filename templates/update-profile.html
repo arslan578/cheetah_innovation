@@ -110,45 +110,43 @@
             {% endfor %}
         </ul>
     {% endif %}
-        <form action="{% url 'SignUp' %}" method="post">
+        <form action="{% url 'Update-Profile' %}" method="post">
             {% csrf_token %}
-            <h2>Sign Up</h2>
-            <p>Please fill in this form to create an account!</p>
+            <h2>Update Profile</h2>
+            <p>You can update your profile!</p>
             <hr>
             <div class="form-group">
                 <div class="row">
-                    <div class="col"><input type="text" class="form-control" name="first_name" placeholder="First Name"
+                    <div class="col"><input type="text" class="form-control" name="first_name" value="{{ first_name }}" placeholder="First Name"
                                             required="required"></div>
-                    <div class="col"><input type="text" class="form-control" name="last_name" placeholder="Last Name"
+                    <div class="col"><input type="text" class="form-control" name="last_name" value="{{ last_name }}" placeholder="Last Name"
                                             required="required"></div>
                 </div>
             </div>
             <div class="form-group">
                 <div class="row">
-                    <div class="col"><input type="text" class="form-control" name="profession" placeholder="Profession"
+                    <div class="col"><input type="text" class="form-control" name="profession" value="{{ profession }}" placeholder="Profession"
                                             required="required"></div>
-                    <div class="col"><input type="text" class="form-control" name="phone_number"
+                    <div class="col"><input type="text" class="form-control" name="phone_number" value="{{ phone_number }}"
                                             placeholder="Phone Number" required="required"></div>
                 </div>
             </div>
             <div class="form-group">
-                <input type="email" class="form-control" name="email" placeholder="Email" required="required">
+                <input type="email" class="form-control" name="email" placeholder="Email" value="{{ email }}" required="required" disabled>
             </div>
             <div class="form-group">
-                <input type="address" class="form-control" name="address" placeholder="Address" required="required">
+                <input type="text" class="form-control" name="address" value="{{ address }}" placeholder="Address" required="required">
             </div>
             <div class="form-group">
-                <input type="password" class="form-control" name="password" placeholder="Password" required="required">
+                <input type="password" class="form-control" name="password" disabled value="{{ password }}" placeholder="Password" required="required">
             </div>
+
             <div class="form-group">
-                <label class="form-check-label"><input type="checkbox" required="required"> I accept the <a href="#">Terms
-                    of Use</a> &amp; <a href="#">Privacy Policy</a></label>
-            </div>
-            <div class="form-group">
-                <button type="submit" class="btn btn-primary btn-lg">Sign Up</button>
+                <button type="submit" class="btn btn-primary btn-lg">Update</button>
             </div>
         </form>
-        <div class="hint-text">Already have an account? <a href="{% url 'Login' %}">Login here</a></div>
+        <div class="hint-text">Deactivate the account? <a href="{% url 'Deactivate' %}">Deactivate</a></div>
+        <div class="hint-text">Delete the account? <a href="{% url 'Delete' %}">Delete</a></div>
     </div>
     </body>
 
