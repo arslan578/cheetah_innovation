@@ -26,7 +26,7 @@ class SignUpView(TemplateView):
                          profession=request.POST.get('profession'),
                          username=request.POST.get('email').split('@')[0] + str(uuid.uuid4()).split('-')[0],
                          phone_number=request.POST.get('phone_number'),
-                         user_type='user'
+                         user_type='client'
                          )
             user.set_password(request.POST.get('password'))
             user.save()
