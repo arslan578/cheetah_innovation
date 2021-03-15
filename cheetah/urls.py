@@ -6,7 +6,9 @@ from cheetah.views import (
     LoginView,
     UpdateProfileView,
     DeactivateUserView,
-    DeeleteUserView
+    DeeleteUserView,
+    AboutUsView,
+    ContactUsView,
 )
 
 urlpatterns = [
@@ -16,5 +18,7 @@ urlpatterns = [
     path('deactivate', DeactivateUserView.as_view(), name='Deactivate'),
     path('delete', DeeleteUserView.as_view(), name='Delete'),
     path('', IndexView.as_view(), name='Index'),
+    path('about-us', AboutUsView.as_view(), name='About-Us'),
+    path('contact-us', ContactUsView.as_view(), name='Contact-Us'),
     path('services', ServicesView.as_view(), name='Services')
 ]

@@ -35,7 +35,7 @@
       </div>
     </div>
 
-    <header class="">
+        <header class="">
       <nav class="navbar navbar-expand-lg">
         <div class="container">
           <a class="navbar-brand" href="index-2.html"> <img src="{% static 'images/cheetah_logo.svg' %}" alt=""> </a>
@@ -84,7 +84,7 @@
                   <h6>SPACE FOR IDEAS, TRAINING AND CREATION OF INNOVATIVE COMPANIES</h6>
                   <h4>JOIN CHEETAH INNOVATION</h4>
                   <p> &nbsp; </p>
-                  <a href="{% url 'About-Us' %}" class="filled-button">Learn More</a>
+                  <a href="#" onclick="scrollto('about');" class="filled-button">Learn More</a>
                 </div>
             </div>
           </div>
@@ -106,6 +106,121 @@
           </div> -->
           
         </div>
+    </div>
+    <!-- Banner Ends Here -->
+
+
+    <div class="request-form">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-8 ">
+            <h4>Incubation Period</h4>
+            <span>The duration of the incubation is two years, during this
+              incubation period we give all the possible luggage to
+              launch into the business world.</span>
+          </div>
+          <div class="col-md-4">
+            <a href="#" onclick="scrollto('contact');" class="border-button">Contact Us</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="map" id="map">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12">
+              <div class="row justify-content-md-center">
+                <h2>Our Locations </h2>
+                <div>
+                  <img src="{% static 'images/Cheetah_map.jpg' %}" />
+                </div>
+              </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Footer Starts Here -->
+    <footer>
+      <div class="container">
+        <div class="row">
+          <div class="col-md-3 footer-item">
+            <h4><img src="{% static 'images/cheetah_logo.svg' %}" alt="" style=" height:60px "></h4>
+            <p>A network of technology project incubators that trains, supervises and supports project leaders and innovative ideas in Burundi, Democratic Republic of the Congo, Rwanda and Uganda.</p>
+            <ul class="social-icons">
+              <li><a rel="nofollow" href="#" target="_blank"><i class="fa fa-facebook"></i></a></li>
+              <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+              <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+              <li><a href="#"><i class="fa fa-youtube"></i></a></li>
+            </ul>
+          </div>
+          <div class="col-md-3 footer-item">
+            <h4>Adresse</h4>
+            <ul class="menu-list">
+              <li>IRIBA INTERNATIONAL
+                Place Marcel Broodthaers 8/5,
+                1060 Bruxelles, Belgique</li>
+              
+            </ul>
+          </div>
+          <div class="col-md-3 footer-item">
+            <h4>Additional Pages</h4>
+            <ul class="menu-list">
+              <li><a href="#" onclick="scrollto('about');">About Us</a></li>
+              <li><a href="{% url 'Services' %}">How We Work</a></li>
+              <li><a href="#" onclick="scrollto('map');">where we are</a></li>
+              <li><a href="#" onclick="scrollto('contact');">Contact Us</a></li>
+            </ul>
+          </div>
+          <div class="col-md-3 footer-item last-item" id="contact">
+            <h4>Contact Us</h4>
+            <ul class="menu-list">
+              <li>Phone 1: &nbsp; <a href="#">+32 477 73 11 24</a></li>
+              <li>Phone 2: &nbsp;<a href="#">+322 892 40 05</a></li>
+              <li>email: &nbsp;<a href="#">cheetah.inno@iriba.org</a></li>
+              <li>Web: &nbsp;<a href="#">iriba.org</a></li>
+            </ul>
+
+            <!-- <div class="contact-form">
+              <form id="contact footer-contact" action="" method="post">
+                <div class="row">
+                  <div class="col-lg-12 col-md-12 col-sm-12">
+                    <fieldset>
+                      <input name="name" type="text" class="form-control" id="name" placeholder="Full Name" required="">
+                    </fieldset>
+                  </div>
+                  <div class="col-lg-12 col-md-12 col-sm-12">
+                    <fieldset>
+                      <input name="email" type="text" class="form-control" id="email" pattern="[^ @]*@[^ @]*" placeholder="E-Mail Address" required="">
+                    </fieldset>
+                  </div>
+                  <div class="col-lg-12">
+                    <fieldset>
+                      <textarea name="message" rows="6" class="form-control" id="message" placeholder="Your Message" required=""></textarea>
+                    </fieldset>
+                  </div>
+                  <div class="col-lg-12">
+                    <fieldset>
+                      <button type="submit" id="form-submit" class="filled-button">Send Message</button>
+                    </fieldset>
+                  </div>
+                </div>
+              </form>
+            </div> -->
+          </div>
+        </div>
+      </div>
+    </footer>
+    
+    <div class="sub-footer">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12">
+            <p>Copyright &copy; 2020 Cheetah Innovation.</p>
+          </div>
+        </div>
+      </div>
     </div>
     
     <script type="text/javascript">

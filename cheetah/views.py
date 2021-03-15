@@ -23,8 +23,10 @@ class SignUpView(TemplateView):
         try:
             user = Users(first_name=request.POST.get('first_name'),
                          last_name=request.POST.get('last_name'), email=request.POST.get('email'),
-                         profession=request.POST.get('profession'), username=request.POST.get('email').split('@')[0] + str(uuid.uuid4()).split('-')[0],
-                         phone_number=request.POST.get('phone_number')
+                         profession=request.POST.get('profession'),
+                         username=request.POST.get('email').split('@')[0] + str(uuid.uuid4()).split('-')[0],
+                         phone_number=request.POST.get('phone_number'),
+                         user_type='user'
                          )
             user.set_password(request.POST.get('password'))
             user.save()
@@ -70,6 +72,13 @@ class IndexView(TemplateView):
 class ServicesView(TemplateView):
     template_name = 'services.html'
 
+
+class AboutUsView(TemplateView):
+    template_name = 'about-us.html'
+
+
+class ContactUsView(TemplateView):
+    template_name = 'contact-us.html'
 
 class UpdateProfileView(LoginRequiredMixin, TemplateView):
     def get(self, request, *args, **kwargs):
